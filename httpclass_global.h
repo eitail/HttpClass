@@ -1,0 +1,12 @@
+#ifndef HTTPCLASS_GLOBAL_H
+#define HTTPCLASS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(HTTPCLASS_LIBRARY)
+#  define HTTPCLASSSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define HTTPCLASSSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // HTTPCLASS_GLOBAL_H
